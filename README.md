@@ -4,9 +4,13 @@ Different scripts to use to analyze or visualize mass spec data sets
 
 ### Install the following packages via command line: 
 pip install pandas
+
 pip install numpy
+
 pip install seaborn
+
 pip install matplotlib
+
 pip install argparse
 
 ### Start with the CSV file

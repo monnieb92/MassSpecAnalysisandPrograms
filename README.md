@@ -143,4 +143,7 @@ optional arguments:
   --locat LOCAT         Location of spectral count columns for the heatmap,
                         default 9:15 (This assumes ParentalA, ParentalB,
                         ParentalC, SampleA, SampleB, SampleC) 
-                        ```
+                        
+                        
+```
+

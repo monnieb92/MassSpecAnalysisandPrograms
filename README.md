@@ -65,15 +65,15 @@ optional arguments:
                         containing Visible, Starred, Protein Name, Accession,
                         etc
   --save SAVE           PNG file name to save
-  --rows ROWS           Number of rows minus 1
+  --rows ROWS           Number of rows aka proteins to iclude minus 1 (python
+                        index starts at 0 instead of 1), default 93
   --fontsize FONTSIZE   Font size for the annotations aka spectral counts,
                         default 8
   --fontsize_tick FONTSIZE_TICK
-                        Font size for the yaxis, default 8
+                        Font size for the y-axis, default 8
   --locat LOCAT         Location of spectral count columns for the heatmap,
                         default 9:15 (This assumes ParentalA, ParentalB,
-                        ParentalC, SampleA, SampleB, SampleC) 
-                        
+                        ParentalC, SampleA, SampleB, SampleC)
                         
 ```
 

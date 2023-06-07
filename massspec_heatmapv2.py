@@ -20,7 +20,7 @@ parser.add_argument('--csv', type=str, help='CSV file path, Create a CSV file wi
 ## argument for the path to the .png file to save
 parser.add_argument('--save', type=str, help='PNG file name to save')
 ## argument of the numbers of proteins to include, aka the number of rows (The python index starts at 0 instead of 1, so this is the # of rows minus 1)
-parser.add_argument('--rows', type=int, default=93, help='Number of rows aka proteins to iclude minus 1 (python index starts at 0 instead of 1), default 93')
+parser.add_argument('--rows', type=int, default=93, help='Number of rows aka proteins to include minus 1 (python index starts at 0 instead of 1), default 93')
 ## argument of the fontsize for the annotation inside each heatmap box
 parser.add_argument('--fontsize', type=int, default=8, help='Font size for the annotations aka spectral counts, default 8')
 ## argument of the fontsize for the y-axis proteins 

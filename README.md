@@ -112,3 +112,35 @@ Example of the code:
 python massspec_heatmapv2.py --csv Organized\ Report\ for\ Mtg16\ MEL\ project-6285.csv --color vlag --size 6 18 --save Trialheatmap.png --fontsize 10 --fontsize_tick 8 --rows 92
 
 ```
+What the info argument looks like: 
+```{python}
+python3 ~/Downloads/massspec_heatmapv2.py --info
+usage: massspec_heatmapv2.py [-h] [--info] [--size SIZE SIZE] [--color COLOR]
+                             [--csv CSV] [--save SAVE] [--rows ROWS]
+                             [--fontsize FONTSIZE]
+                             [--fontsize_tick FONTSIZE_TICK] [--locat LOCAT]
+
+Generate and save a heatmap plot
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --info                --size nargs=2 default=[6, 16] Plot size --color
+                        default=vlag Color map; --csv CSV file path ; --save
+                        PNG file name to save; --rows default=93 number of
+                        rows minus 1
+  --size SIZE SIZE      Plot size, default is 6 16 (should be entered as two
+                        integers with a space between them)
+  --color COLOR         Color map, default is vlag
+  --csv CSV             CSV file path, Create a CSV file with headers
+                        containing Visible, Starred, Protein Name, Accession,
+                        etc
+  --save SAVE           PNG file name to save
+  --rows ROWS           Number of rows minus 1
+  --fontsize FONTSIZE   Font size for the annotations aka spectral counts,
+                        default 8
+  --fontsize_tick FONTSIZE_TICK
+                        Font size for the yaxis, default 8
+  --locat LOCAT         Location of spectral count columns for the heatmap,
+                        default 9:15 (This assumes ParentalA, ParentalB,
+                        ParentalC, SampleA, SampleB, SampleC) 
+                        ```

@@ -20,11 +20,11 @@ parser.add_argument('--csv', type=str, help='CSV file path, Create a CSV file wi
 ## argument for the path to the .png file to save
 parser.add_argument('--save', type=str, help='PNG file name to save')
 ## argument of the numbers of proteins to include, aka the number of rows (The python index starts at 0 instead of 1, so this is the # of rows minus 1)
-parser.add_argument('--rows', type=int, default=93, help='Number of rows minus 1')
+parser.add_argument('--rows', type=int, default=93, help='Number of rows aka proteins to iclude minus 1 (python index starts at 0 instead of 1), default 93')
 ## argument of the fontsize for the annotation inside each heatmap box
 parser.add_argument('--fontsize', type=int, default=8, help='Font size for the annotations aka spectral counts, default 8')
 ## argument of the fontsize for the y-axis proteins 
-parser.add_argument('--fontsize_tick', type=int, default=8, help='Font size for the yaxis, default 8') ## version 2 addition 
+parser.add_argument('--fontsize_tick', type=int, default=8, help='Font size for the y-axis, default 8') ## version 2 addition 
 ## argument of the location of your sample spectral count columns (again this is the column minus 1 as python starts at 0 instead of 1)
 parser.add_argument('--locat', type=str, default='9:15', help='Location of spectral count columns for the heatmap, default 9:15 (This assumes ParentalA, ParentalB, ParentalC, SampleA, SampleB, SampleC)')
 args = parser.parse_args()

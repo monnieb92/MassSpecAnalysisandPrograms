@@ -40,7 +40,7 @@ https://seaborn.pydata.org/tutorial/color_palettes.html
 python massspec_heatmapv2.py --csv Organized\ Report\ for\ Mtg16\ MEL\ project-6285.csv --color vlag --size 6 18 --save Trialheatmap.png --fontsize 10 --fontsize_tick 8 --rows 92
 
 ```
-### What the info argument looks like: 
+### What the --info argument looks like and the different command options available: 
 ```{python}
 python3 ~/Downloads/massspec_heatmapv2.py --info
 usage: massspec_heatmapv2.py [-h] [--info] [--size SIZE SIZE] [--color COLOR]

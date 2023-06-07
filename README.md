@@ -30,7 +30,7 @@ https://seaborn.pydata.org/tutorial/color_palettes.html
 ### Write a name for the output file .png 
 
 ### Defining the code: 
-
+```{python}
 import argparse
 import numpy as np
 import seaborn as sns
@@ -82,3 +82,4 @@ ax.set_yticklabels(ax.get_yticklabels(), size=args.fontsize_tick, weight='bold')
 plt.savefig(args.save)
 
 plt.show()
+```

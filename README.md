@@ -24,6 +24,8 @@ In this case they are 9:15, which is the default
 In this case they are 0:93 (total of 94), which is the default 
 
 ### Select what color to make the heatmap or leave with default 
+default is vlag
+https://seaborn.pydata.org/tutorial/color_palettes.html
 
 ### Write a name for the output file .png 
 
@@ -46,6 +48,7 @@ parser.add_argument('--csv', type=str, help='CSV file path, Create a CSV file wi
 parser.add_argument('--save', type=str, help='PNG file name to save')
 parser.add_argument('--rows', type=int, default=93, help='Number of rows minus 1')
 parser.add_argument('--fontsize', type=int, default=8, help='Font size for the annotations, default 8')
+parser.add_argument('--fontsize_tick', type=int, default=8, help='Font size for the yaxis, default 8') ## version 2 addition 
 parser.add_argument('--locat', type=str, default='9:15', help='Location of spectral count columns for the heatmap, default 9:15 (This assumes ParentalA, ParentalB, ParentalC, SampleA, SampleB, SampleC)')
 args = parser.parse_args()
 
@@ -75,7 +78,7 @@ offset = 1e-1
 dfheatmap_offset = dfheatmap_filled + offset
 fig, ax = plt.subplots(figsize=args.size)
 p1 = sns.heatmap(dfheatmap_offset, fmt='.0f', annot=dfheatmap_filled, annot_kws={"size": args.fontsize, "weight": "bold"}, cmap=args.color, linecolor='white', linewidth='0.5', norm=LogNorm())
-
+ax.set_yticklabels(ax.get_yticklabels(), size=args.fontsize_tick, weight='bold') ## version 2 addition 
 plt.savefig(args.save)
 
 plt.show()
